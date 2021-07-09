@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Test3</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+   <h3>The value of an integer array is doubled and sorted in descending order</h3>
+   <p id="demo"></p>
+   <p id="demo1"></p>
+<script>
+        const numbers1 = [1,2,3,4,5];
+        const numbers2 = numbers1.map(myFunction);
+
+        document.getElementById("demo").innerHTML = numbers1;
+
+        function myFunction(value, index, array) {
+        return value * 2;
+        }
+        let numbers3 = numbers2.sort((a,b) => b-a);
+        document.getElementById("demo1").innerHTML = numbers3
+
+</script>
+
+</body>
+</html>

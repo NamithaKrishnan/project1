@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Machine Test 2</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+</head>
+<body>
+	<h3>Five southern states of India</h3>
+     
+	<ul>
+		<li ><a href="#demo" id="st1" class="cls" data-toggle ="collapse">Andrapradesh</a></li>
+			<div id="demo" class="collapse">visakhapatnam,Amaravati,Kurnool</div>
+		
+		<li><a href="#demo1" id="st2" class="cls" data-toggle ="collapse">Karnataka</a></li>
+			<div id="demo1" class="collapse">Banglore</div>
+		
+		<li><a href="#demo2" id="st3" class="cls" data-toggle ="collapse">Kerala</a></li>
+		    <div id="demo2" class="collapse">Thiruvananthapuram</div>
+
+        <li><a href="#demo3" id="st4" class="cls" data-toggle ="collapse">Tamilnadu</a></li>
+            <div id="demo3" class="collapse">Chennai</div>
+
+		<li><a href="#demo4"  id="st5" class="cls" data-toggle ="collapse">Telangana</a></li>
+		    <div id="demo4" class="collapse">Hyderabad</div>
+	</ul>
+	<button onclick="myFunction()">Try it</button>
+	
+
+
+</body>
+<script >
+        function myFunction() {
+          
+           $('.cls').each(function () {
+			$("#" + this.id).append('*');
+		});
+ 
+         }
+</script>
+</html>
